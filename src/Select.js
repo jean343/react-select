@@ -843,7 +843,7 @@ const Select = createClass({
 		});
 
 		const inputProps = {
-			...this.props.inputProps,
+			//...this.props.inputProps,
 			role: 'combobox',
 			'aria-expanded': '' + isOpen,
 			'aria-owns': ariaOwns,

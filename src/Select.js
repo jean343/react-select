@@ -842,8 +842,8 @@ const Select = createClass({
 				&& !this.state.inputValue
 		});
 
-		// TODO: Check how this project includes Object.assign()
-		const inputProps = Object.assign({}, this.props.inputProps, {
+		const inputProps = {
+			...this.props.inputProps,
 			role: 'combobox',
 			'aria-expanded': '' + isOpen,
 			'aria-owns': ariaOwns,

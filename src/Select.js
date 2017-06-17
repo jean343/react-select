@@ -860,7 +860,7 @@ const Select = createClass({
 			ref: ref => this.input = ref,
 			required: this.state.required,
 			value: this.state.inputValue
-		});
+		};
 
 		if (this.props.inputRenderer) {
 			return this.props.inputRenderer(inputProps);
